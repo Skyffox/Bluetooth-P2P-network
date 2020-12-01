@@ -30,3 +30,5 @@ Run:
 
 If you want to use the !upload command, it takes a file from data/, and sends it to the remote client.
 The remote client will then find this file in his local data/.
+
+Contributers: Duncan Kampert, Joey Lai, Ruben Stap and Julius Wagt
