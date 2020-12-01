@@ -1,0 +1,32 @@
+Setup:
+    To initialize the environment, and download all required packages;
+
+      make setup
+
+    Make setup requires root for a single command which allows Python to use your bluetooth adapter.
+
+Run:
+    MON VALUE	MEANING
+    0		monitor off
+    1		monitor on
+
+    ARG VALUE	TOP DETECTION	BROADCAST		ROUTING
+    0		heartbeat	normal broadcast	broadcast
+    1		on change	normal broadcast	direct
+    2		on change	optimized broadcast	direct
+    3		on change	optimized broadcast	broadcast
+
+    To run this application normally;
+
+      make run MON={} ARG={}
+
+    To run our created application in a simulation using TCP sockets;
+
+      make run-gui-simulation MON={} ARG={}
+
+    where mon specifies whether or not to send data to the monitor/log data.
+    Arg specifies which algorithms to use for communication.
+
+
+If you want to use the !upload command, it takes a file from data/, and sends it to the remote client.
+The remote client will then find this file in his local data/.

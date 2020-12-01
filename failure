@@ -1,0 +1,18 @@
+This application needs at least 2 arguments MON, ARG. The final argument SIM is optional and taken care of by the
+simulation ui.
+
+MON VALUE	MEANING
+0		monitor off
+1		monitor on
+
+ARG VALUE	TOP DETECTION	BROADCAST		ROUTING
+0		heartbeat	normal broadcast	broadcast
+1		on change	normal broadcast	direct
+2		on change	optimized broadcast	direct
+3		on change	optimized broadcast	broadcast
+
+SIM needs only to be specified in case of a simulation. It accepts a string in the following form:
+mac0-name0-port0+mac1-name1-port1
+
+mac0, name0 and port0 refer to the port, name and Bluetooth adress of this chat application while all other mac, name
+and port values refer to neighboring chat applications.

@@ -1,0 +1,4 @@
+PyBluez==0.22
+psutil
+networkx
+pyqt5
